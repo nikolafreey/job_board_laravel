@@ -44,4 +44,19 @@ class ListingController extends Controller
 
         return view('listings.index', compact('listings', 'tags'));
     }
+
+    public function show(Request $request, Listing $listing)
+    {
+        return view('listings.show', compact('listing'));
+    }
+
+    public function apply(Request $request, Listing $listing)
+    {
+        $listing->clicks()->create([
+            'user_agent' => $request->userAgent(),
+            'ip' => $request->ip()
+        ]);
+
+        return redirect()->to($listing->apply_link);
+    }
 }
