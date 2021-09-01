@@ -11,6 +11,10 @@ Route::get('/dashboard', function () {
 
 require __DIR__ . '/auth.php';
 
+Route::get('/new', [ListingController::class, 'create'])->name('listings.create');
+
+Route::post('/new', [ListingController::class], 'store')->name('listings.store');
+
 Route::get('/{listing}', [ListingController::class, 'show'])->name('listings.show');
 
 Route::get('/{listing}/apply', [ListingController::class, 'apply'])->name('listings.apply');

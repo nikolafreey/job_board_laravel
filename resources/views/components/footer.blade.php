@@ -7,7 +7,7 @@
             <span class="ml-3 text-xl">Laravel Job Board</span>
         </a>
         <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-            by <a href="https://aschmelyun.com" class="hover:text-gray-900" target="_blank" rel="noopener">@aschmelyun</a> &mdash; with <a href="https://tailblocks.cc" class="hover:text-gray-900" target="_blank" rel="noopener">tailblocks.cc</a>
+            by <a href="https://aschmelyun.com" class="hover:text-gray-900" target="_blank" rel="noopener">Nikola Vukovic</a> &mdash; with <a href="https://tailblocks.cc" class="hover:text-gray-900" target="_blank" rel="noopener">tailblocks.cc</a>
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a href="https://github.com/aschmelyun/laravel-job-board" target="_blank" rel="noopener" class="text-gray-500 hover:text-gray-900">
