@@ -2,11 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListingController;
+use Illuminate\Http\Request;
 
 Route::get('/', [ListingController::class, 'index'])->name('listings.index');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::get('/dashboard', function (Request $request) {
+    return view('dashboard', [
+        'listings' => $request->user()->listings
+    ]);
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__ . '/auth.php';
